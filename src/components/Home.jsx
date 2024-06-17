@@ -58,7 +58,7 @@ const Home = () => {
           </div>
           <p className="mb-4 text-sm md:text-base">I am a skilled web developer, a cyber security enthusiast, and an aspiring network engineer, passionately seeking mastery in each field I enter.</p>
           <a href="/Ismail_Anis_CHERRAK_CV.pdf" download>
-            <button className="px-4 py-2 bg-blue-500 text-white rounded">Download CV</button>
+            {/* <button className="px-4 py-2 bg-blue-500 text-white rounded">Download CV</button> */}
           </a>
         </div>
         <div className="w-full md:w-1/2 p-4 flex justify-center items-center">
