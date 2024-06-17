@@ -42,7 +42,7 @@ const Qualifications = () => {
         {
           name: 'CCNA',
           description: 'Cisco Certified Network Associate',
-          image: '/images/ccna.jpg',
+          image: '/images/CCNA.jpg',
         },
       ],
     },
@@ -52,7 +52,7 @@ const Qualifications = () => {
         {
           name: 'eJPT',
           description: 'eLearnSecurity Junior Penetration Tester',
-          image: '/images/ejpt.jpg',
+          image: '/images/ejpt.png',
         },
       ],
     },
@@ -63,7 +63,7 @@ const Qualifications = () => {
       <div className="max-w-8xl mx-auto px-4">
       <h1 className="text-3xl font-bold mb-8 text-center flex items-center justify-center space-x-2">
           <Lottie options={lottieOptions(star)} height={60} width={60} style={{ margin: '0', padding: '0' }}  />
-          <span className='px-8'>Qualifications</span>
+          <span className='md:px-8'>Qualifications</span>
           <Lottie options={lottieOptions(star)} height={60} width={60} style={{ margin: '0', padding: '0' }}  />
       </h1>
 
@@ -72,7 +72,7 @@ const Qualifications = () => {
         <h1 className="text-2xl font-bold mb-8 text-center flex items-center justify-center space-x-2">
           <Lottie options={lottieOptions(star)} height={60} width={60} style={{ margin: '0', padding: '0' }}  />
           <Lottie options={lottieOptions(star)} height={60} width={60} style={{ margin: '0', padding: '0' }}  />
-          <span className='px-8'>Technologies</span>
+          <span className='md:px-8'>Technologies</span>
           <Lottie options={lottieOptions(star)} height={60} width={60} style={{ margin: '0', padding: '0' }}  />
           <Lottie options={lottieOptions(star)} height={60} width={60} style={{ margin: '0', padding: '0' }}  />
         </h1>
@@ -91,14 +91,14 @@ const Qualifications = () => {
         <h1 className="text-2xl font-bold mb-8 text-center flex items-center justify-center space-x-2">
           <Lottie options={lottieOptions(star)} height={60} width={60} style={{ margin: '0', padding: '0' }}  />
           <Lottie options={lottieOptions(star)} height={60} width={60} style={{ margin: '0', padding: '0' }}  />
-          <span className='px-8'>Certifications</span>
+          <span className='md:px-8'>Certifications</span>
           <Lottie options={lottieOptions(star)} height={60} width={60} style={{ margin: '0', padding: '0' }}  />
           <Lottie options={lottieOptions(star)} height={60} width={60} style={{ margin: '0', padding: '0' }}  />
         </h1>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {certifications.map((cert, index) => (
               <div key={index} className="bg-gray-800 p-6 rounded-lg shadow-md flex flex-col items-center text-center">
-                <img src={cert.details[0].image} alt={cert.details[0].name} className="w-32 h-32 object-cover rounded-full mb-4" />
+                <img src={cert.details[0].image} alt={cert.details[0].name} className="w-36 h-36 rounded-full object-cover  mb-4" />
                 <h3 className="text-xl font-bold mb-2">{cert.details[0].name}</h3>
                 <p className="text-sm">{cert.details[0].description}</p>
               </div>

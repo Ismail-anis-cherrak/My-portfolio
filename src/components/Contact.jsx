@@ -56,6 +56,24 @@ const Contact = () => {
       <div className="max-w-6xl mx-auto px-4">
         <h1 className="text-3xl font-bold mb-8 text-center">Contact Me</h1>
         <div className="flex flex-col lg:flex-row gap-8">
+          {/* Contact Details */}
+          <div className="w-full lg:w-1/2 p-8 rounded-lg shadow-md">
+            <br />
+            <ul className="space-y-4">
+              <li className="flex items-center">
+                <span className="text-gray-400 mr-4 text-bold text-2xl">📍</span>
+                <span className="text-xl">Hai Fillaoucen El Bahia Oran, Algeria</span>
+              </li>
+              <li className="flex items-center">
+                <span className="text-gray-400 mr-4 text-bold text-2xl">📞</span>
+                <a href="tel:+213542280939" className="text-blue-500 text-xl hover:underline">+213 542280939</a>
+              </li>
+              <li className="flex items-center">
+                <span className="text-gray-400 mr-4 text-bold text-2xl">📧</span>
+                <a href="mailto:ismailcherrak481@gmail.com" className="text-blue-500 text-xl hover:underline">ismailcherrak481@gmail.com</a>
+              </li>
+            </ul>
+          </div>
           {/* Contact Form */}
           <div className="w-full lg:w-1/2 p-8 rounded-lg shadow-md">
             <h2 className="text-2xl font-bold mb-6 text-center">Get in Touch</h2>
@@ -118,25 +136,7 @@ const Contact = () => {
               </div>
             </form>
           </div>
-          {/* Contact Details */}
-          <div className="w-full lg:w-1/2 p-8 rounded-lg shadow-md">
-            <h1 className="text-2xl font-bold mb-6 text-center">Contact Details</h1>
-            <br />
-            <ul className="space-y-4">
-              <li className="flex items-center">
-                <span className="text-gray-400 mr-4 text-bold text-2xl">📍</span>
-                <span className="text-xl">Hai Fillaoucen El Bahia Oran, Algeria</span>
-              </li>
-              <li className="flex items-center">
-                <span className="text-gray-400 mr-4 text-bold text-2xl">📞</span>
-                <a href="tel:+213542280939" className="text-blue-500 text-xl hover:underline">+213 542280939</a>
-              </li>
-              <li className="flex items-center">
-                <span className="text-gray-400 mr-4 text-bold text-2xl">📧</span>
-                <a href="mailto:ismailcherrak481@gmail.com" className="text-blue-500 text-xl hover:underline">ismailcherrak481@gmail.com</a>
-              </li>
-            </ul>
-          </div>
+          
         </div>
       </div>
       <ToastContainer />

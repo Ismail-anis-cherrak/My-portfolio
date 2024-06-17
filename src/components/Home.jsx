@@ -2,9 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { useSpring, animated } from '@react-spring/web';
 
 const roles = [
-  'Full stack web developer ...',
-  'Network Engineer ...',
-  'Penetration tester ...',
+  'Full stack web developer ..',
+  'Network Engineer ..',
+  'Penetration tester ..',
 ];
 
 const Home = () => {
@@ -40,8 +40,8 @@ const Home = () => {
     return () => clearTimeout(typeTimeout);
   }, [displayedText, isDeleting, loopNum, typingSpeed]);
 
-  const experienceProps = useSpring({ number: 5, from: { number: 0 }, config: { duration: 2000, easing: (t) => t } });
-  const projectsProps = useSpring({ number: 3, from: { number: 0 }, config: { duration: 2000, easing: (t) => t } });
+  const experienceProps = useSpring({ number: 2, from: { number: 0 }, config: { duration: 2000, easing: (t) => t } });
+  const projectsProps = useSpring({ number: 0, from: { number: 0 }, config: { duration: 2000, easing: (t) => t } });
   const techsProps = useSpring({ number: 10, from: { number: 0 }, config: { duration: 2000, easing: (t) => t } });
   const fieldsProps = useSpring({ number: 3, from: { number: 0 }, config: { duration: 2000, easing: (t) => t } });
 
@@ -56,7 +56,7 @@ const Home = () => {
           <div className="text-xl md:text-3xl font-bold mb-4">
             I'm a <span className="md:text-4xl md:font-bold">{displayedText}</span>
           </div>
-          <p className="mb-4 text-sm md:text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vehicula ex eu gravida tristique.</p>
+          <p className="mb-4 text-sm md:text-base">I am a skilled web developer, a cyber security enthusiast, and an aspiring network engineer, passionately seeking mastery in each field I enter.</p>
           <a href="/Ismail_Anis_CHERRAK_CV.pdf" download>
             <button className="px-4 py-2 bg-blue-500 text-white rounded">Download CV</button>
           </a>
@@ -70,7 +70,7 @@ const Home = () => {
           <animated.div className="text-3xl md:text-5xl font-bold inline-block mr-2">
             {experienceProps.number.to((n) => formatNumber(n.toFixed(0)))}
           </animated.div>
-          <div className="text-center md:text-left">
+          <div className="text-center ">
             <p className="text-sm md:text-lg">years of experience</p>
           </div>
         </div>
@@ -78,7 +78,7 @@ const Home = () => {
           <animated.div className="text-3xl md:text-5xl font-bold inline-block mr-2">
             {projectsProps.number.to((n) => formatNumber(n.toFixed(0)))}
           </animated.div>
-          <div className="text-center md:text-left">
+          <div className="text-center ">
             <p className="text-sm md:text-lg">projects done</p>
           </div>
         </div>
@@ -86,7 +86,7 @@ const Home = () => {
           <animated.div className="text-3xl md:text-5xl font-bold inline-block mr-2">
             {techsProps.number.to((n) => formatNumber(n.toFixed(0)))}
           </animated.div>
-          <div className="text-center md:text-left">
+          <div className="text-center ">
             <p className="text-sm md:text-lg">techs mastered</p>
           </div>
         </div>
@@ -94,7 +94,7 @@ const Home = () => {
           <animated.div className="text-3xl md:text-5xl font-bold inline-block mr-2">
             {fieldsProps.number.to((n) => formatNumber(n.toFixed(0)))}
           </animated.div>
-          <div className="text-center md:text-left">
+          <div className="text-center ">
             <p className="text-sm md:text-lg">fields studied</p>
           </div>
         </div>
