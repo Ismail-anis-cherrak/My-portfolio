@@ -1,8 +1,9 @@
 import React from 'react';
 import Lottie from 'react-lottie';
 import { FaGithub, FaLink, FaLinkedin, FaExternalLinkAlt } from 'react-icons/fa';
-import { SiGatsby, SiPython, SiLinux, SiDocker, SiMongodb, SiHtml5, SiCss3, SiJavascript } from 'react-icons/si';
+import { SiTailwindcss, SiGatsby, SiPython, SiLinux, SiDocker, SiMongodb, SiHtml5, SiCss3, SiJavascript, SiMarkdown, SiVisualstudiocode, SiGithub } from 'react-icons/si';
 import { DiNodejs, DiReact } from 'react-icons/di';
+
 
 import cybersecurity from '../../public/images/pentesting.json';
 import Development from '../../public/images/code.json';
@@ -23,44 +24,46 @@ const Projects = () => {
   const allProjects = [
     // Example Development Project
     {
-      image: '/images/project1.jpg',
-      name: 'Project One',
-      description: 'A full-stack web application with React and Node.js.',
-      github: 'https://github.com/username/project-one',
-      website: 'https://project-one.com',
+      image: '/images/portfolio.png', // Add an appropriate image or screenshot of your portfolio
+      name: 'Personal Portfolio',
+      description: 'A personal portfolio built with React, Tailwind CSS, and Lottie animations. This portfolio showcases my projects, skills, and testimonies. It provides a clean, responsive design and interactive user experience using modern web development practices.',
+      github: 'https://github.com/Ismail-anis-cherrak/My-portfolio.git', // Replace with your actual GitHub repo link
+      website: 'https://my-portfolio-navy-iota-71.vercel.app/', // Replace with your actual portfolio link
       technologies: [
         <DiReact key="react" className="text-2xl" />,
-        <DiNodejs key="node" className="text-2xl" />,
+        <SiHtml5 key="html" className="text-2xl" />,
+        <SiCss3 key="css" className="text-2xl" />,
+        <SiJavascript key="javascript" className="text-2xl" />,
+        <SiTailwindcss key="tailwind" className="text-2xl" />,
+      ],
+    },
+    {
+      image: '/images/elearn.png', // Add an appropriate image or screenshot of the E-learning application
+      name: 'E-learning Application',
+      description: 'A comprehensive E-learning platform developed for universities using the MERN stack (MongoDB, Express.js, React, Node.js) and Tailwind CSS. This application provides a seamless learning experience with user-friendly interfaces, real-time interactions, and a modern, responsive design.',
+      technologies: [
+        <DiReact key="react" className="text-2xl" />,
         <SiMongodb key="mongodb" className="text-2xl" />,
-        <SiGatsby key="gatsby" className="text-2xl" />,
+        <DiNodejs key="node" className="text-2xl" />,
+        <SiTailwindcss key="tailwind" className="text-2xl" />,
+        <SiJavascript key="javascript" className="text-2xl" />,
+        <SiHtml5 key="html" className="text-2xl" />,
         <SiCss3 key="css" className="text-2xl" />,
       ],
     },
-    // Example Networking Project
     {
-      image: '/images/networking1.jpg',
-      name: 'Network Analyzer',
-      description: 'A tool to analyze and monitor network traffic.',
-      github: 'https://github.com/username/network-analyzer',
-      website: 'https://network-analyzer.com',
+      image: '/images/ccnp.jpeg', // Add an appropriate image related to networking or the CCNP ENARSI certification
+      name: 'CCNP ENARSI Command Snippets',
+      description: 'A collection of CCNP ENARSI command snippets, covering topics such as routing, OSPF, EIGRP, BGP, static IP, and SLA. The project is structured using Markdown (.md) files, making it easy to navigate and understand complex networking concepts and configurations. Developed using Visual Studio Code for efficient editing and management.',
+      github: 'https://github.com/Ismail-anis-cherrak/ccnp-enarsi.git', // Link to the GitHub repo
       technologies: [
+        <SiGithub key="github" className="text-2xl" />,
+        <SiMarkdown key="markdown" className="text-2xl" />,
         <SiLinux key="linux" className="text-2xl" />,
-        <SiPython key="python" className="text-2xl" />,
+        <SiVisualstudiocode key="vscode" className="text-2xl" />,
       ],
-    },
-    // Example Cybersecurity Project
-    {
-      image: '/images/cybersecurity1.jpg',
-      name: 'Vulnerability Scanner',
-      description: 'A scanner to detect vulnerabilities in web applications.',
-      github: 'https://github.com/username/vulnerability-scanner',
-      website: 'https://vulnerability-scanner.com',
-      technologies: [
-        <SiPython key="python" className="text-2xl" />,
-        <SiJavascript key="javascript" className="text-2xl" />,
-        <SiDocker key="docker" className="text-2xl" />,
-      ],
-    },
+    }
+    
   ];
 
   const testimonies = [
@@ -146,7 +149,7 @@ const Projects = () => {
         </h1>
         <div className="flex flex-wrap justify-center -mx-4">
           {testimonies.map((testimony, index) => (
-            <div key={index} className="border-white p-6 rounded-lg shadow-md flex flex-col items-center mx-4 mb-8 w-full sm:w-1/2 lg:w-1/3">
+            <div key={index} className="border-white border p-6 rounded-lg shadow-md flex flex-col items-center mx-4 mb-8 w-full sm:w-1/2 lg:w-1/3">
               <img src={testimony.image} alt={testimony.name} className="w-32 h-32 object-cover rounded-full mb-4" />
               <h2 className="text-xl font-bold mb-2">{testimony.name}</h2>
               <p className="text-sm mb-4 text-center">{testimony.sentence}</p>
