@@ -20,63 +20,45 @@ const lottieOptions = (animationData) => ({
 });
 
 const Projects = () => {
-  const projects = [
-    // Development Projects
+  const allProjects = [
+    // Example Development Project
     {
-      category: 'Development',
-      items: [
-        // Example Project
-        // {
-        //   image: '/images/project1.jpg',
-        //   name: 'Project One',
-        //   description: 'A full-stack web application with React and Node.js.',
-        //   github: 'https://github.com/username/project-one',
-        //   website: 'https://project-one.com',
-        //   technologies: [
-        //     <DiReact key="react" className="text-2xl" />,
-        //     <DiNodejs key="node" className="text-2xl" />,
-        //     <SiMongodb key="mongodb" className="text-2xl" />,
-        //     <SiGatsby key="gatsby" className="text-2xl" />,
-        //     <SiCss3 key="css" className="text-2xl" />,
-        //   ],
-        // },
+      image: '/images/project1.jpg',
+      name: 'Project One',
+      description: 'A full-stack web application with React and Node.js.',
+      github: 'https://github.com/username/project-one',
+      website: 'https://project-one.com',
+      technologies: [
+        <DiReact key="react" className="text-2xl" />,
+        <DiNodejs key="node" className="text-2xl" />,
+        <SiMongodb key="mongodb" className="text-2xl" />,
+        <SiGatsby key="gatsby" className="text-2xl" />,
+        <SiCss3 key="css" className="text-2xl" />,
       ],
     },
-    // Networking Projects
+    // Example Networking Project
     {
-      category: 'Networking',
-      items: [
-        // Example Project
-        // {
-        //   image: '/images/networking1.jpg',
-        //   name: 'Network Analyzer',
-        //   description: 'A tool to analyze and monitor network traffic.',
-        //   github: 'https://github.com/username/network-analyzer',
-        //   website: 'https://network-analyzer.com',
-        //   technologies: [
-        //     <SiLinux key="linux" className="text-2xl" />,
-        //     <SiPython key="python" className="text-2xl" />,
-        //   ],
-        // },
+      image: '/images/networking1.jpg',
+      name: 'Network Analyzer',
+      description: 'A tool to analyze and monitor network traffic.',
+      github: 'https://github.com/username/network-analyzer',
+      website: 'https://network-analyzer.com',
+      technologies: [
+        <SiLinux key="linux" className="text-2xl" />,
+        <SiPython key="python" className="text-2xl" />,
       ],
     },
-    // Red Team Projects
+    // Example Cybersecurity Project
     {
-      category: 'cybersecurity',
-      items: [
-        // Example Project
-        // {
-        //   image: '/images/cybersecurity1.jpg',
-        //   name: 'Vulnerability Scanner',
-        //   description: 'A scanner to detect vulnerabilities in web applications.',
-        //   github: 'https://github.com/username/vulnerability-scanner',
-        //   website: 'https://vulnerability-scanner.com',
-        //   technologies: [
-        //     <SiPython key="python" className="text-2xl" />,
-        //     <SiJavascript key="javascript" className="text-2xl" />,
-        //     <SiDocker key="docker" className="text-2xl" />,
-        //   ],
-        // },
+      image: '/images/cybersecurity1.jpg',
+      name: 'Vulnerability Scanner',
+      description: 'A scanner to detect vulnerabilities in web applications.',
+      github: 'https://github.com/username/vulnerability-scanner',
+      website: 'https://vulnerability-scanner.com',
+      technologies: [
+        <SiPython key="python" className="text-2xl" />,
+        <SiJavascript key="javascript" className="text-2xl" />,
+        <SiDocker key="docker" className="text-2xl" />,
       ],
     },
   ];
@@ -121,49 +103,38 @@ const Projects = () => {
         <Lottie options={lottieOptions(rocket)} height={120} width={120} style={{ margin: '0', padding: '0' }} />
       </h1>
       <div className="max-w-8xl mx-auto px-4">
-        {projects.map((category, index) => (
-          <div key={index}>
-            <h1 className="text-3xl font-bold mb-8 text-center flex items-center justify-center space-x-2">
-              <Lottie options={lottieOptions(category.category === 'Development' ? Development : (category.category === 'Networking' ? Networking : cybersecurity))} height={60} width={60} style={{ margin: '0', padding: '0' }} />
-              <span className='md:mx-8 md:px-8'>{category.category}</span>
-              <Lottie options={lottieOptions(category.category === 'Development' ? Development : (category.category === 'Networking' ? Networking : cybersecurity))} height={60} width={60} style={{ margin: '0', padding: '0' }} />
-            </h1>
-            {category.items.length === 0 ? (
-              <div className="text-center text-gray-400 mb-8">No projects for the moment</div>
-            ) : (
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-                {category.items.map((project, index) => (
-                  <div key={index} className="bg-gray-800 p-4 rounded-lg shadow-md flex flex-col items-center transform transition-transform duration-300 ease-in-out hover:scale-105">
-                    <img src={project.image} alt={project.name} className="w-full h-48 object-cover rounded mb-4" />
-                    <h2 className="text-xl font-bold mb-2">{project.name}</h2>
-                    <p className="text-sm mb-4">{project.description}</p>
-                    <div className="flex space-x-4 mb-4">
-                      {project.github && (
-                        <a href={project.github} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-700">
-                          <FaGithub className="text-2xl" />
-                        </a>
-                      )}
-                      {project.website && (
-                        <a href={project.website} target="_blank" rel="noopener noreferrer" className="text-green-500 hover:text-green-700">
-                          <FaLink className="text-2xl" />
-                        </a>
-                      )}
+        {allProjects.length === 0 ? (
+          <div className="text-center text-gray-400 mb-8">No projects for the moment</div>
+        ) : (
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+            {allProjects.map((project, index) => (
+              <div key={index} className="bg-gray-800 p-4 rounded-lg shadow-md flex flex-col items-center transform transition-transform duration-300 ease-in-out hover:scale-105">
+                <img src={project.image} alt={project.name} className="w-full h-48 object-cover rounded mb-4" />
+                <h2 className="text-xl font-bold mb-2">{project.name}</h2>
+                <p className="text-sm mb-4">{project.description}</p>
+                <div className="flex space-x-4 mb-4">
+                  {project.github && (
+                    <a href={project.github} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-700">
+                      <FaGithub className="text-2xl" />
+                    </a>
+                  )}
+                  {project.website && (
+                    <a href={project.website} target="_blank" rel="noopener noreferrer" className="text-green-500 hover:text-green-700">
+                      <FaLink className="text-2xl" />
+                    </a>
+                  )}
+                </div>
+                <div className="flex flex-wrap justify-center">
+                  {project.technologies.map((tech, index) => (
+                    <div key={index} className="m-1">
+                      {tech}
                     </div>
-                    <div className="flex flex-wrap justify-center">
-                      {project.technologies.map((tech, index) => (
-                        <div key={index} className="m-1">
-                          {tech}
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                ))}
+                  ))}
+                </div>
               </div>
-            )}
-            {/* Separator */}
-            {index < projects.length - 1 && <><br /><br /></>}
+            ))}
           </div>
-        ))}
+        )}
       </div>
 
       {/* Testimonies Section */}
@@ -175,7 +146,7 @@ const Projects = () => {
         </h1>
         <div className="flex flex-wrap justify-center -mx-4">
           {testimonies.map((testimony, index) => (
-            <div key={index} className="bg-gray-800 p-6 rounded-lg shadow-md flex flex-col items-center mx-4 mb-8 w-full sm:w-1/2 lg:w-1/3">
+            <div key={index} className="border-white p-6 rounded-lg shadow-md flex flex-col items-center mx-4 mb-8 w-full sm:w-1/2 lg:w-1/3">
               <img src={testimony.image} alt={testimony.name} className="w-32 h-32 object-cover rounded-full mb-4" />
               <h2 className="text-xl font-bold mb-2">{testimony.name}</h2>
               <p className="text-sm mb-4 text-center">{testimony.sentence}</p>
