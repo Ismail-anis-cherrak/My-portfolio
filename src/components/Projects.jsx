@@ -1,6 +1,11 @@
+// import React from 'react';
+// import Lottie from 'react-lottie';
+// import { FaGithub, FaLink, FaLinkedin, FaExternalLinkAlt } from 'react-icons/fa';
+// import { SiTailwindcss, SiGatsby, SiPython, SiLinux, SiDocker, SiMongodb, SiHtml5, SiCss3, SiJavascript, SiMarkdown, SiVisualstudiocode, SiGithub } from 'react-icons/si';
+// import { DiNodejs, DiReact } from 'react-icons/di';
 import React from 'react';
 import Lottie from 'react-lottie';
-import { FaGithub, FaLink, FaLinkedin, FaExternalLinkAlt } from 'react-icons/fa';
+import { FaGithub, FaLink, FaLinkedin, FaExternalLinkAlt,FaTerminal  } from 'react-icons/fa';
 import { SiTailwindcss, SiGatsby, SiPython, SiLinux, SiDocker, SiMongodb, SiHtml5, SiCss3, SiJavascript, SiMarkdown, SiVisualstudiocode, SiGithub } from 'react-icons/si';
 import { DiNodejs, DiReact } from 'react-icons/di';
 
@@ -22,6 +27,19 @@ const lottieOptions = (animationData) => ({
 
 const Projects = () => {
   const allProjects = [
+    {
+      image: '/images/netbuilder.png', // Add an appropriate image or screenshot related to NetBuilder
+      name: 'NetBuilder',
+      description: 'A command-line tool that automates network configurations for devices like routers, switches, and access points, including IP addressing, routing protocols, and VLANs.',
+      github: 'https://github.com/Ismail-anis-cherrak/Net-Builder.git', // GitHub repo for Linux users
+      website: 'https://drive.google.com/drive/folders/1ZBEIdCaVqGPoh-jKidbJFZfLyxaVq8rX?usp=sharing', // Link to the Google Drive folder for download
+      technologies: [
+        <SiGithub key="github" className="text-2xl" />,
+        <SiLinux key="linux" className="text-2xl" />,
+        <SiPython key="python" className="text-2xl" />,
+        <FaTerminal  key="terminal" className="text-2xl" />,
+      ],
+    },    
     // Example Development Project
     {
       image: '/images/portfolio.png', // Add an appropriate image or screenshot of your portfolio

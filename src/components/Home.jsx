@@ -40,9 +40,9 @@ const Home = () => {
     return () => clearTimeout(typeTimeout);
   }, [displayedText, isDeleting, loopNum, typingSpeed]);
 
-  const experienceProps = useSpring({ number: 2, from: { number: 0 }, config: { duration: 2000, easing: (t) => t } });
-  const projectsProps = useSpring({ number: 0, from: { number: 0 }, config: { duration: 2000, easing: (t) => t } });
-  const techsProps = useSpring({ number: 10, from: { number: 0 }, config: { duration: 2000, easing: (t) => t } });
+  const experienceProps = useSpring({ number: 3, from: { number: 0 }, config: { duration: 2000, easing: (t) => t } });
+  const projectsProps = useSpring({ number: 4, from: { number: 0 }, config: { duration: 2000, easing: (t) => t } });
+  const techsProps = useSpring({ number: 24, from: { number: 0 }, config: { duration: 2000, easing: (t) => t } });
   const fieldsProps = useSpring({ number: 3, from: { number: 0 }, config: { duration: 2000, easing: (t) => t } });
 
   const formatNumber = (num) => (num < 10 ? `0${num}` : num);

@@ -1,8 +1,10 @@
 import React from 'react';
 import { FaGithub, FaDocker } from 'react-icons/fa';
 import { DiReact, DiNodejs, DiMongodb } from 'react-icons/di';
-import { SiHtml5, SiCss3, SiJavascript, SiTailwindcss, SiBootstrap,SiGo, SiMysql, SiPostgresql } from 'react-icons/si';
+import { SiHtml5, SiCss3, SiJavascript, SiTailwindcss, SiBootstrap, SiGo, SiMysql, SiPostgresql, SiNextdotjs, SiOracle, SiPython, SiDjango, SiFlask, SiFastapi, SiExpo } from 'react-icons/si';
 import { AiOutlineDatabase } from 'react-icons/ai';
+
+
 
 import Lottie from 'react-lottie';
 
@@ -19,6 +21,21 @@ const lottieOptions = (animationData) => ({
 });
 
 const Qualifications = () => {
+  // const technologies = [
+  //   { icon: <DiReact className="text-4xl" />, name: 'React' },
+  //   { icon: <DiNodejs className="text-4xl" />, name: 'Node.js' },
+  //   { icon: <FaDocker className="text-4xl" />, name: 'Docker' },
+  //   { icon: <DiMongodb className="text-4xl" />, name: 'MongoDB' },
+  //   { icon: <SiGo className="text-4xl" />, name: 'GoLang' },
+  //   { icon: <SiHtml5 className="text-4xl" />, name: 'HTML' },
+  //   { icon: <SiCss3 className="text-4xl" />, name: 'CSS' },
+  //   { icon: <SiJavascript className="text-4xl" />, name: 'JavaScript' },
+  //   { icon: <SiTailwindcss className="text-4xl" />, name: 'Tailwind CSS' },
+  //   { icon: <SiBootstrap className="text-4xl" />, name: 'Bootstrap' },
+  //   { icon: <SiMysql className="text-4xl" />, name: 'MySQL' },
+  //   { icon: <AiOutlineDatabase className="text-4xl" />, name: 'SQL' },
+  //   { icon: <SiPostgresql className="text-4xl" />, name: 'PostgreSQL' },
+  // ];
   const technologies = [
     { icon: <DiReact className="text-4xl" />, name: 'React' },
     { icon: <DiNodejs className="text-4xl" />, name: 'Node.js' },
@@ -33,6 +50,15 @@ const Qualifications = () => {
     { icon: <SiMysql className="text-4xl" />, name: 'MySQL' },
     { icon: <AiOutlineDatabase className="text-4xl" />, name: 'SQL' },
     { icon: <SiPostgresql className="text-4xl" />, name: 'PostgreSQL' },
+    { icon: <SiNextdotjs className="text-4xl" />, name: 'Next.js' },
+    { icon: <SiOracle className="text-4xl" />, name: 'Oracle' },
+    { icon: <SiPython className="text-4xl" />, name: 'Python' },
+    { icon: <SiDjango className="text-4xl" />, name: 'Django' },
+    { icon: <SiFlask className="text-4xl" />, name: 'Flask' },
+    { icon: <SiFastapi className="text-4xl" />, name: 'FastAPI' },
+    { icon: <DiReact className="text-4xl" />, name: 'React Native' },
+    { icon: <SiTailwindcss className="text-4xl" />, name: 'NativeWind' },
+    { icon: <SiExpo className="text-4xl" />, name: 'Expo' },
   ];
 
   const certifications = [
@@ -111,3 +137,4 @@ const Qualifications = () => {
 };
 
 export default Qualifications;
+
