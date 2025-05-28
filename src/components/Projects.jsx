@@ -5,8 +5,8 @@
 // import { DiNodejs, DiReact } from 'react-icons/di';
 import React from 'react';
 import Lottie from 'react-lottie';
-import { FaGithub, FaLink, FaLinkedin, FaExternalLinkAlt,FaTerminal  } from 'react-icons/fa';
-import { SiTailwindcss, SiGatsby, SiPython, SiLinux, SiDocker, SiMongodb, SiHtml5, SiCss3, SiJavascript, SiMarkdown, SiVisualstudiocode, SiGithub } from 'react-icons/si';
+import { FaGithub, FaLink, FaLinkedin, FaExternalLinkAlt,FaTerminal, FaMicrochip  } from 'react-icons/fa';
+import { SiTailwindcss, SiGatsby,SiNextdotjs, SiPython, SiLinux, SiDocker, SiMongodb, SiHtml5, SiCss3, SiJavascript, SiMarkdown, SiVisualstudiocode, SiGithub } from 'react-icons/si';
 import { DiNodejs, DiReact } from 'react-icons/di';
 
 
@@ -39,7 +39,20 @@ const Projects = () => {
         <SiPython key="python" className="text-2xl" />,
         <FaTerminal  key="terminal" className="text-2xl" />,
       ],
-    },    
+    },
+    {
+      image: '/images/checkmate.png', // Add an appropriate image or screenshot related to NetBuilder
+      name: 'CheckMate',
+      description: 'A full-stack attendance management system that combines RFID and PIN authentication to provide secure, efficient employee tracking.',
+      github: 'https://github.com/Ismail-anis-cherrak/check-mate.git', // GitHub repo for Linux users
+      website: 'https://check-mate-gamma.vercel.app/employees', // Link to the Google Drive folder for download
+      technologies: [
+        <SiNextdotjs title="Next.js" className="text-2xl" />,
+        <SiTailwindcss title="Tailwind CSS" className="text-2xl" />,
+        <SiMongodb title="MongoDB" className="text-2xl" />,
+        <FaMicrochip title="RFID / IoT" className="text-2xl" />,
+      ],
+    },     
     // Example Development Project
     {
       image: '/images/portfolio.png', // Add an appropriate image or screenshot of your portfolio
