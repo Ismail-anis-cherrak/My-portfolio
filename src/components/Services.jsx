@@ -1,6 +1,3 @@
-
-
-
 // import React, { useState, useEffect, useRef } from 'react';
 // import { FaCode, FaNetworkWired, FaShieldAlt } from 'react-icons/fa';
 
@@ -116,11 +113,17 @@ const Services = () => {
       description: 'Managing and maintaining computer networks to ensure smooth operation.',
       details: 'Our network administration services include setting up, configuring, and managing network infrastructure, ensuring security, and troubleshooting issues. We make sure your network runs smoothly and efficiently.',
     },
+    // {
+    //   icon: <FaShieldAlt className="text-4xl mb-4" />,
+    //   name: 'Penetration Testing',
+    //   description: 'Conducting security tests to identify and address vulnerabilities.',
+    //   details: 'We offer comprehensive penetration testing services to identify security weaknesses in your systems. Our tests include web application testing, network testing, and more, ensuring that your systems are secure from potential threats.',
+    // },
     {
-      icon: <FaShieldAlt className="text-4xl mb-4" />,
-      name: 'Penetration Testing',
-      description: 'Conducting security tests to identify and address vulnerabilities.',
-      details: 'We offer comprehensive penetration testing services to identify security weaknesses in your systems. Our tests include web application testing, network testing, and more, ensuring that your systems are secure from potential threats.',
+      icon: <FaCode className="text-4xl mb-4" />,
+      name: 'Instructor',
+      description: 'Teaching development, computer science, and networking concepts.',
+      details: 'I offer instruction and tutoring in web development, computer science fundamentals, and networking. Whether you are a beginner or looking to deepen your understanding, I can help you master programming languages, algorithms, data structures, and networking concepts through clear explanations and hands-on examples.',
     },
   ]);
 

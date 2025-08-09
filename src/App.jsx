@@ -6,6 +6,7 @@ import Projects from "./components/Projects";
 import Qualifications from "./components/Qualifications";
 import Services from "./components/Services";
 import ThreeBackground from "./components/ThreeBackground";
+import Certifications from './components/Certs';
 
 function App() {
   return (
@@ -15,6 +16,8 @@ function App() {
         <Nav />
         <Home />
         <div className="space-y-40">
+          <Certifications />
+          <br />
           <Services />
           <br />
           <Projects />
