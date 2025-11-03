@@ -51,7 +51,7 @@ const Qualifications = () => {
   return (
     <div className="text-white w-full py-16" id="qualifs">
       <div className="max-w-8xl mx-auto px-4">
-      <h1 className="text-3xl font-bold mb-8 text-center flex items-center justify-center space-x-2">
+      <h1 className="text-5xl font-bold mb-8 text-center flex items-center justify-center space-x-2">
           <Lottie options={lottieOptions(star)} height={60} width={60} style={{ margin: '0', padding: '0' }}  />
           <span className='md:px-8'>Qualifications</span>
           <Lottie options={lottieOptions(star)} height={60} width={60} style={{ margin: '0', padding: '0' }}  />

@@ -5,22 +5,16 @@ import { faGithub, faInstagram, faLinkedin, faFacebook } from '@fortawesome/free
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
 
+  // Replace scroll behavior with hash navigation so App.jsx will switch views
   const handleNavClick = (e) => {
     e.preventDefault();
     const targetId = e.currentTarget.getAttribute('href').slice(1);
-    const targetElement = document.getElementById(targetId);
-
-    if (targetElement) {
-      const navbarHeight = document.querySelector('nav').offsetHeight;
-      const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - navbarHeight;
-
-      window.scrollTo({
-        top: targetPosition,
-        behavior: 'smooth'
-      });
-      if (isOpen) {
-        setIsOpen(false);
-      }
+    // update the hash (this triggers App's hashchange listener)
+    if (typeof window !== 'undefined') {
+      window.location.hash = targetId;
+    }
+    if (isOpen) {
+      setIsOpen(false);
     }
   };
 
@@ -36,7 +30,7 @@ const Nav = () => {
         <a className="text-white hover:text-[#7f7fff] transition duration-300 ease-in-out" href="#certifications" onClick={handleNavClick}>Certifications</a>
         <a className="text-white hover:text-[#7f7fff] transition duration-300 ease-in-out" href="#services" onClick={handleNavClick}>Services</a>
         <a className="text-white hover:text-[#7f7fff] transition duration-300 ease-in-out" href="#projects" onClick={handleNavClick}>Projects</a>
-        <a className="text-white hover:text-[#7f7fff] transition duration-300 ease-in-out" href="#qualifs" onClick={handleNavClick}>Qualifications</a>
+        <a className="text-white hover:text-[#7f7fff] transition duration-300 ease-in-out" href="#qualifications" onClick={handleNavClick}>Qualifications</a>
         <a className="text-white hover:text-[#7f7fff] transition duration-300 ease-in-out" href="#contact" onClick={handleNavClick}>Contact</a>
       </div>
 
@@ -56,10 +50,11 @@ const Nav = () => {
           <a className="block text-white hover:text-[#7f7fff] transition duration-300 ease-in-out py-2 text-center" href="#certifications" onClick={handleNavClick}>Certifications</a>
           <a className="block text-white hover:text-[#7f7fff] transition duration-300 ease-in-out py-2 text-center" href="#services" onClick={handleNavClick}>Services</a>
           <a className="block text-white hover:text-[#7f7fff] transition duration-300 ease-in-out py-2 text-center" href="#projects" onClick={handleNavClick}>Projects</a>
-          <a className="block text-white hover:text-[#7f7fff] transition duration-300 ease-in-out py-2 text-center" href="#qualifs" onClick={handleNavClick}>Qualifications</a>
+          <a className="block text-white hover:text-[#7f7fff] transition duration-300 ease-in-out py-2 text-center" href="#qualifications" onClick={handleNavClick}>Qualifications</a>
           <a className="block text-white hover:text-[#7f7fff] transition duration-300 ease-in-out py-2 text-center" href="#contact" onClick={handleNavClick}>Contact</a>
         </div>
         <div className="flex justify-center space-x-4 mt-4">
+          
           <a href="https://github.com/Ismail-anis-cherrak/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#7f7fff] transition duration-300 ease-in-out flex items-center space-x-2">
             <FontAwesomeIcon icon={faGithub} size="lg" />
             <span className="hidden md:inline">Github</span>

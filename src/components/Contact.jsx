@@ -62,7 +62,7 @@ const Contact = () => {
             <ul className="space-y-4">
               <li className="flex items-center">
                 <span className="text-gray-400 mr-4 text-bold text-2xl">📍</span>
-                <span className="text-xl">Hai Fillaoucen El Bahia Oran, Algeria</span>
+                <span className="text-xl">Oran, Algeria</span>
               </li>
               <li className="flex items-center">
                 <span className="text-gray-400 mr-4 text-bold text-2xl">📞</span>
