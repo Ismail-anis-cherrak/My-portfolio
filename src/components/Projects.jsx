@@ -280,7 +280,7 @@ const Projects = () => {
         <DiNodejs key="node" className="text-2xl" />,
         <SiTailwindcss key="tailwind" className="text-2xl" />,
       ],
-      themes: ['web', 'education'],
+      themes: ['web'],
       date: { start: 'March 2024', end: 'June 2024' },
     },
     {
@@ -295,8 +295,23 @@ const Projects = () => {
         <SiLinux key="linux" className="text-2xl" />,
         <SiVisualstudiocode key="vscode" className="text-2xl" />,
       ],
-      themes: ['network', 'documentation'],
+      themes: ['network'],
       date: { start: 'May 2024', end: 'July 2024' },
+    },
+    {
+      image: '/images/blog.jpeg',
+      name: 'Personal Tech Blog',
+      description: 'A modern tech blog built with Next.js 14, Tailwind CSS, and Shadcn UI components. Features a clean design, dark mode, and MDX content management.',
+      github: 'https://github.com/Ismail-anis-cherrak/blog-website',  // Update with actual repo
+      website: 'https://ismail-cherrak-blog.netlify.app/blog/',
+      technologies: [
+        <SiNextdotjs key="next" className="text-2xl" />,
+        <SiTailwindcss key="tailwind" className="text-2xl" />,
+        <DiReact key="react" className="text-2xl" />,
+        <SiJavascript key="js" className="text-2xl" />,
+      ],
+      themes: ['web'],
+      date: { start: 'November 2025', end: 'November 2025' },
     },
   ];
 

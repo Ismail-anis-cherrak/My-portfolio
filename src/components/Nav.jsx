@@ -31,6 +31,7 @@ const Nav = () => {
         <a className="text-white hover:text-[#7f7fff] transition duration-300 ease-in-out" href="#services" onClick={handleNavClick}>Services</a>
         <a className="text-white hover:text-[#7f7fff] transition duration-300 ease-in-out" href="#projects" onClick={handleNavClick}>Projects</a>
         <a className="text-white hover:text-[#7f7fff] transition duration-300 ease-in-out" href="#qualifications" onClick={handleNavClick}>Qualifications</a>
+        <a className="text-white hover:text-[#7f7fff] transition duration-300 ease-in-out" href="https://ismail-cherrak-blog.netlify.app/blog/" target="_blank" rel="noopener noreferrer">Blog</a>
         <a className="text-white hover:text-[#7f7fff] transition duration-300 ease-in-out" href="#contact" onClick={handleNavClick}>Contact</a>
       </div>
 
@@ -51,6 +52,7 @@ const Nav = () => {
           <a className="block text-white hover:text-[#7f7fff] transition duration-300 ease-in-out py-2 text-center" href="#services" onClick={handleNavClick}>Services</a>
           <a className="block text-white hover:text-[#7f7fff] transition duration-300 ease-in-out py-2 text-center" href="#projects" onClick={handleNavClick}>Projects</a>
           <a className="block text-white hover:text-[#7f7fff] transition duration-300 ease-in-out py-2 text-center" href="#qualifications" onClick={handleNavClick}>Qualifications</a>
+          <a className="block text-white hover:text-[#7f7fff] transition duration-300 ease-in-out py-2 text-center" href="https://ismail-cherrak-blog.netlify.app/blog/" target="_blank" rel="noopener noreferrer">Blog</a>
           <a className="block text-white hover:text-[#7f7fff] transition duration-300 ease-in-out py-2 text-center" href="#contact" onClick={handleNavClick}>Contact</a>
         </div>
         <div className="flex justify-center space-x-4 mt-4">

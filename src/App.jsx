@@ -47,7 +47,7 @@ function App() {
       <ThreeBackground />
       <div className="relative z-10">
         <Nav />
-        <div className="py-8">
+        <div className="py-8 overflow-hidden">
           {renderView()}
         </div>
       </div>
