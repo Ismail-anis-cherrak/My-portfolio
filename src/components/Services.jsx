@@ -65,7 +65,8 @@ const Services = () => {
   }, [modalOpen]);
 
   return (
-    <div className="text-white w-full py-16" id="services">
+    // add extra top padding on mobile and desktop, and ensure lower z-index so Nav stays above
+    <div className="text-white w-full pt-20 md:pt-24 pb-16 relative z-0" id="services">
       <div className="max-w-6xl mx-auto px-4 flex items-center justify-center mb-12 relative">
         <h1 className="text-3xl md:text-5xl font-bold flex items-center justify-center mx-4 relative z-10">
         <Lottie animationData={planetAnimation} loop={true} style={{ width: 80, height: 80, position: 'absolute', left: '-50px', top: '50%', transform: 'translateY(-50%)' }} />
